@@ -11,3 +11,6 @@ Since the sphere is approximated by N points, the larger the N is, the more accu
 It also used a Brute force algorithm that generates all the maximum points, not the minimum points required for actual ellipsoid calculations. So it still needs to be improved in terms of speed.
 
 If anyone has improved it, I would greatly appreciate it if you could let me know.
+
+The key algorithm for finding the ellipsoid is from ant-trullo/smFiSH_software/EllipsoidTool.py
+  https://github.com/ant-trullo/smFiSH_software/blob/main/EllipsoidTool.py
