@@ -28,6 +28,10 @@ class EllipsoidTool:
     def __init__(self): pass
     
     def getMinVolEllipse(self, P=None, tolerance=0.01):
+        """
+        from ant-trullo/smFiSH_software/EllipsoidTool.py
+        https://github.com/ant-trullo/smFiSH_software/blob/main/EllipsoidTool.py
+        """
         """ Find the minimum volume ellipsoid which holds all the points
         
         Based on work by Nima Moshtagh
