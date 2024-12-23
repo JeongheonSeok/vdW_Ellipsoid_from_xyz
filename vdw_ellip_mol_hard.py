@@ -197,7 +197,7 @@ def getMinVolvdwEllipse(xyzdir,tolerance=0.01,N=N_sph):
     return (center, radii, rotation)
     
 if __name__ == "__main__":
-    xyzdir = "C:/Users/JeongHeonSeok/Desktop/DIPEA.xyz"
+    xyzdir = "dir/to/~.xyz"
     tolerance = 0.01
     N_sph = 100
     (nuccenter, nucradii, nucrotation) = getMinVolmolEllipse(xyzdir,tolerance = tolerance, N = N_sph)
