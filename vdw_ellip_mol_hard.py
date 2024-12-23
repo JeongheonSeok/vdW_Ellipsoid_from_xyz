@@ -49,7 +49,7 @@ class EllipsoidTool:
         (center, radii, rotation)
         
         """
-        (N, d) = np.shape(P)    # N:점 개수 , d:공간 차원
+        (N, d) = np.shape(P)
         d = float(d)
     
         # Q will be our working array
@@ -148,13 +148,13 @@ def generate_points_on_sphere(x_c, y_c, z_c, atom, N=N_sph):
     # with golden spiral method
     r = VDWR[atom]
     points = []
-    phi = (1 + np.sqrt(5)) / 2  # 황금비
+    phi = (1 + np.sqrt(5)) / 2  # golden ratio
     for i in range(N):
-        z = 1 - (2 * (i + 0.5) / N)  # z축 좌표
-        theta = 2 * np.pi * i / phi  # 경도
+        z = 1 - (2 * (i + 0.5) / N)  # z axis coordinate
+        theta = 2 * np.pi * i / phi  # longitude
         x = np.sqrt(1 - z**2) * np.cos(theta)
         y = np.sqrt(1 - z**2) * np.sin(theta)
-        # 구 좌표 -> 직교 좌표 변환
+        # spherical coordinate -> cartesian coordinate
         points.append([x_c + r * x, y_c + r * y, z_c + r * z])
     return points
             
