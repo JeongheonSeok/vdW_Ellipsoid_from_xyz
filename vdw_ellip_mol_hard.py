@@ -31,8 +31,8 @@ class EllipsoidTool:
         """
         from ant-trullo/smFiSH_software/EllipsoidTool.py
         https://github.com/ant-trullo/smFiSH_software/blob/main/EllipsoidTool.py
-        """
-        """ Find the minimum volume ellipsoid which holds all the points
+        
+        Find the minimum volume ellipsoid which holds all the points
         
         Based on work by Nima Moshtagh
         http://www.mathworks.com/matlabcentral/fileexchange/9542
