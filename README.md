@@ -8,7 +8,8 @@ Code to find the minimum ellipsoid that encloses a molecule (where the volume is
 
 Since the sphere is approximated by N_sph points, the larger the N_sph is, the more accurate the result is obtained, but it needs more time.
 
-It also used a Brute force algorithm that generates all the maximum points, not the minimum points required for actual ellipsoid calculations. So it still needs to be improved in terms of speed.\n
+It also used a Brute force algorithm that generates all the maximum points, not the minimum points required for actual ellipsoid calculations. So it still needs to be improved in terms of speed.
+
 The time complexity of the current algorithm is O(N_atom * N_sph) for the number of atoms N_atom and the number of spherical approximative points N_sph. Using an algorithm that approximates spherical points only for areas close to the actual elliptic surface, it is expected that O((N_atom * N_sph)^(2/3)) for sufficiently large molecules.
 
 If anyone has improved it, I would greatly appreciate it if you could let me know.
