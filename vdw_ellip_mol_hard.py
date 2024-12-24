@@ -4,6 +4,8 @@
 Created on Mon Dec 16 16:05:07 2024
 
 @author: JeongHeonSeok
+
+please check xyzdir, tolerance, N_sph before use
 """
 
 from __future__ import division
